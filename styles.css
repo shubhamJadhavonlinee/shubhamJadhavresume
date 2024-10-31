@@ -1,39 +1,116 @@
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
+.header-content h1 {
     margin: 0;
+    font-size: 2.5em;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+main {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
     color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
 }
 
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #666;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+section.skills ul,
+section.achievements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section.skills ul li,
+section.achievements ul li {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 4px solid #333;
+}
+
+/* Footer styles */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background: #333;
     color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-content p {
+        font-size: 1em;
+    }
 }
